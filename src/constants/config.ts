@@ -2,7 +2,7 @@
 export const APP_CONFIG = {
   name: 'WeatherPlanner',
   description: 'Plan your day based on weather',
-  version: '1.0.0',
+  version: '2.0.0',
 };
 
 export const API_CONFIG = {
@@ -23,12 +23,16 @@ export const STORAGE_KEYS = {
   theme: 'weather-planner-theme',
   location: 'weather-planner-location',
   preferences: 'weather-planner-preferences',
+  settings: 'weather-planner-settings',
+  savedLocations: 'weather-planner-saved-locations',
+  weatherCache: 'weather-planner-weather-cache',
 };
 
 export const REFRESH_INTERVALS = {
   weather: 10 * 60 * 1000, // 10 minutes
   events: 30 * 60 * 1000, // 30 minutes
   location: 60 * 60 * 1000, // 1 hour
+  airQuality: 30 * 60 * 1000, // 30 minutes
 };
 
 export const UI_CONFIG = {
@@ -36,4 +40,5 @@ export const UI_CONFIG = {
   toastDuration: 4000,
   maxActivitySuggestions: 6,
   maxEventsDisplay: 10,
+  pullToRefreshThreshold: 80,
 };
